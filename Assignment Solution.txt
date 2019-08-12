@@ -1,0 +1,28 @@
+Assignment Solution
+
+1. 
+Album.objects.get(title='Vinicius De Moraes')
+Track.objects.all().filter(album=Album.objects.get(title='Vinicius De Moraes')) 
+
+2. 
+Artist.objects.get(name='Philip Glass Ensemble')
+Album.objects.all().filter(artist=Artist.objects.get(name='Philip Glass Ensemble')) 
+
+3.
+Playlist.objects.all().filter(name='Brazilian Music')
+Track.objects.all().filter(playlist=Playlist.objects.get(name='Brazilian Music'))
+4. 
+Genre.objects.get(name="Jazz")
+Track.objects.all().filter(genre=Genre.objects.get(name="Jazz"))    
+
+5. 
+Track.objects.get(name='My Time After Awhile').genre_id		
+Genre.objects.get(id='6').name					
+
+6.
+Track.objects.get(name='My Time After Awhile').media_type_id	
+MediaType.objects.get(id='1').name				 
+
+7.
+Track.objects.get(name='My Time After Awhile').album_id		
+Album.objects.get(id='20').title				
